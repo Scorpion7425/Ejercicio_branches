@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form id="registro-form">
+
+        <label for="nombre_completo">Nombre: </label>
+        <input type="text" id="nombre_completo" name="nombre_completo" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" minlength="8" required /><br /><br />
+        <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" minlength="8"
+            required /><br /><br />
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required />
+        <br />
+        <label for="opcion_genero">Género</label>
+        <select name="opcion_genero" id="opcion_genero" required>
+            <option value="opcion1">Femenino</option>
+            <option value="opcion2">Masculino</option>
+            <option value="opcion3">Otro</option>
+        </select>
+        <br /><br />
+
+        <label for="foto">Foto</label>
+        <input type="file" name="foto" id="foto" />
+        <br /><br />
+
+        <label for="aceptar_terminos">Acepto los términos y condiciones</label>
+        <input type="checkbox" name="aceptar_terminos" id="aceptar_terminos" required />
+        <br /><br />
+
+        <input type="submit" value="Confirmar" />
+    </form>
+    <script src="../js/forms.js"></script>
+</body>
+
+</html>
